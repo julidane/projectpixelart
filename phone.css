@@ -2,6 +2,7 @@
   width: 100%;
   margin:auto;
   height: 100vh;  
+  overflow: auto;
 }
 
 .color-palette {
