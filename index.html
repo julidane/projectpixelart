@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paleta de Cores</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -14,7 +20,7 @@
         <h1 id="title">Paleta de Cores</h1>
     </header>
     <main>
-        <section>
+        <section class="color-palette">
             <div id="color-palette">
                 <div class="color selected" id="first-div"></div>
                 <div class="color" id="second-div"></div>
@@ -23,22 +29,27 @@
             </div>
         </section>
 
-        <section>
+        <section class="buttons">
             <button id="clear-board" onclick="resetColors()">Limpar</button>
-            <label for="quantity">Tamanho:</label>
-            <input type="number" id="board-size" name="quantity" min="1">
+            <div class="tamanho">
+                <label for="quantity">Tamanho</label>
+                <input type="number" id="board-size" name="quantity" min="1">
+            </div>
             <button id="generate-board" onclick="userBoardSize()">VQV</button>
 
         </section>
 
-        <section>
+        <section class="pixel-board">
             <div id="pixel-board">
 
             </div>
         </section>
-        
+
         <script src="script.js"></script>
     </main>
+    <footer>
+        <p>Juliana Fernandes, 2021</p>
+    </footer>
 
 
 
